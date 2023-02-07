@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid gold;
+            margin: auto;
+            background-color: sandybrown;
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        .items {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: #a4d0d7;
+
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationery {
+            /* float: left;
+            width: 48%; */
+            /* clear: left;
+            clear: right; */
+            clear: both;
+        }
+
+        p,
+        h3 {
+            /* text-align: left; */
+            /* text-align: right; */
+            /* text-align: center; */
+            text-align: justify;
+
+
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 341px;
+            padding: auto;
+            width: 133px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruit" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum
+                ratione, quisquam quas reiciendis tempora dolor dolore aliquid et mollitia minus, veniam voluptas modi
+                eligendi velit vel corporis vitae iure?</p>
+        </div>
+
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="computerspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum
+                ratione, quisquam quas reiciendis tempora dolor dolore aliquid et mollitia minus, veniam voluptas modi
+                eligendi velit vel corporis vitae iure?</p>
+        </div>
+
+        <div id="stationery" class="items">
+            <h3>Stationery</h3>
+            <p id="stationerypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum
+                ratione, quisquam quas reiciendis tempora dolor dolore aliquid et mollitia minus, veniam voluptas modi
+                eligendi velit vel corporis vitae iure?</p>
+        </div>
+        <div id="glasses" class="items">
+            <h3>Glasses</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum
+                ratione, quisquam quas reiciendis tempora dolor dolore aliquid et mollitia minus, veniam voluptas modi
+                eligendi velit vel corporis vitae iure?</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

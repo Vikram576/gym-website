@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<style>
+    /* Css reset */
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('man.jpg');
+        height: 1250px;
+        font-family: 'Pacifico', cursive;
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 32px;
+        color: rgb(109, 196, 236);
+
+    }
+
+    .mid {
+        /* border: 2px solid red; */
+        position: sticky;
+        display: block;
+        width: 50%;
+        margin: 30px auto;
+
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
+
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        list-style: none;
+        font-size: 18px;
+
+
+    }
+
+    .navbar li a {
+        color: rgb(109, 196, 236);
+        text-decoration: none;
+        padding: 18px 16px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: chocolate;
+
+    }
+
+    .left img {
+        width: 75px;
+        filter: invert(100%);
+
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 0px;
+        font-size: 17px;
+    }
+
+    .btn {
+        margin: 25px 9px;
+        padding: 9px 15px;
+        border-radius: 15px;
+        background-color: rgb(102, 204, 235);
+        color: rgb(16, 18, 19);
+        cursor: pointer;
+        font-size: 15px;
+        font-family: 'Pacifico', cursive;
+        font-weight: bold;
+
+    }
+    .container button{
+            display: block;
+            width: 20%;
+            margin: 30px auto;
+    }
+
+    .btn:hover {
+        background-color: rgb(88, 187, 218);
+    }
+
+    .container {
+        /* border: 2px solid rgb(111, 211, 236); */
+        margin: 103px 75px;
+        padding: 68px 103px;
+        width: 35%;
+        border-radius: 9px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 250px;
+        background-color: rgb(164, 225, 240);
+        font-family: 'Pacifico', cursive;
+        border-radius: 10px;
+        margin: 12px auto;
+        padding: 5px;
+
+    }
+
+    .form-group input:hover {
+        background-color: rgb(126, 185, 212);
+        cursor: pointer;
+    }
+
+    .container h1 {
+        color: rgb(164, 225, 240);
+        text-align: center;
+
+    }
+
+    .belowLeft {
+        position: absolute;
+        list-style: none;
+        margin: 2px;
+        padding: 5px;
+        top: 1300px;
+        width: 250px;
+    }
+
+    footer li {
+        list-style: none;
+        color: rgb(126, 185, 212);
+        margin: 10px 12px;
+        padding: 2px;
+    }
+
+    .belowCenter {
+        position: absolute; 
+        top: 200px;
+        left: 530px;
+        margin: 12px auto;
+        width: 136%;
+        color: rgb(126, 185, 212); 
+        }
+
+    .belowRight {
+        position: absolute;
+        list-style: none;
+        margin: 0px;
+        padding: 5px;
+        top: 0px;
+        left: 985px;
+        width: 421px;
+        /* position: absolute;
+        list-style: none;
+        margin: 2px;
+        padding: 5px;
+        top: 900px;
+        left: px;
+        width: 421px */
+        /* position: absolute;
+        left: 1060px;
+        bottom: 1%;
+        margin: 0px;
+        padding: 0px; */
+    }
+
+    .belowRight ul li:hover {
+        color: chocolate;
+        cursor: pointer;
+    }
+
+    .belowLeft ul li:hover {
+        color: chocolate;
+        cursor: pointer;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+
+        <div class="left">
+            <img src="pic.png" alt="Error loading Image">
+            <div>
+                Fitness Space
+            </div>
+
+
+        </div>
+
+
+        <!-- mid for navigation bar -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#"> Fitness Center</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+
+        <!-- right box for button -->
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the our gym club for changing your shape </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Email ID">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+<footer>
+    <div class="belowLeft">
+        <ul>
+            <li>Gym equipment</li>
+            <li>Services</li>
+            <li>Membership Details</li>
+            <li>contact us</li>
+
+
+        </ul>
+        <!-- <ul>
+        <li>Create your Membership</li>
+        <li>Offers</li>
+        <li>Training Details</li>
+        <li>Coaches</li>
+        </ul> -->
+
+        <!-- <ul>
+        <li>Gym equipment</li>
+        <li>Services</li>
+        <li>Membership Details</li>
+        <li>contact us</li>
+
+
+    </ul> -->
+
+        <div class="belowCenter">Copyright all-right reserved 2023</div>
+        <div class="belowRight">
+            <ul>
+                <li>Create your Membership</li>
+                <li>Offers</li>
+                <li>Training Details</li>
+                <li>Coaches</li>
+            </ul>
+
+        </div>
+
+</footer>
+
+</html>
